@@ -1,60 +1,109 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.navbar a{
+.navbar a {
     font-size: 18px;
     font-weight: bold;
 }
 
-.carousel-inner{
+.carousel-inner {
     height: 800px;
     margin-top: 1rem;
 }
 
 
-.container{
+.container {
     margin-top: 10px;
 }
 
-.parrafor{
+.parrafor {
     font-size: large;
 }
 
-.presentacion{
+.presentacion {
     display: flex;
     padding: 6rem;
     background-color: black;
 }
 
-.presentacion img{
+.presentacion img {
     width: 700px;
     height: 700px;
 }
 
-.historia{
+.historia {
     display: flex;
     align-items: center;
     margin-right: 5px;
     font-weight: bold;
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: 6s;
 }
 
-.historia p:hover{
+.historia p:hover {
     scale: 2.5px;
 }
 
-.presentacion img:hover{
+.presentacion img:hover {
     filter: blur(2px);
 }
 
-.fondo{
+.fondo {
     background-color: black;
 }
 
-.d-flex{
+.d-flex {
     background-color: gray;
+}
+
+/* NOSOTROS */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nosotros nosotros nosotros nosotros"
+        "foto1 foto2 foto3 foto4"
+        "foto1 foto2 foto3 foto4"
+        "foto1 foto2 foto3 foto4";
+}
+
+.nosotros {
+    grid-area: nosotros;
+    height: 150px;
+    color:white;
+    margin-top: 1rem;
+}
+
+.foto1 {
+    grid-area: foto1;
+    background-image: url(/img/barbero1.jpg);
+    background-size: cover;
+    height: 1000px;
+}
+
+.foto2 {
+    grid-area: foto2;
+    background-image: url(/img/barbero2.jpg);
+    background-size: cover;
+    height: 1000px;
+}
+
+.foto3 {
+    grid-area: foto3;
+    background-image: url(/img/barbero3.jpg);
+    background-size: cover;
+    height: 1000px;
+}
+
+.foto4 {
+    grid-area: foto4;
+    background-image: url(/img/barbero4.jpg);
+    background-size: cover;
+    height: 1000px;
 }
