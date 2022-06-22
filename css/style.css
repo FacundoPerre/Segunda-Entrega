@@ -8,10 +8,10 @@
     font-weight: bold;
 }
 
-.carousel-inner img{
+.carousel-inner{
     height: 800px;
-    margin-top: 1rem;
 }
+
 
 .container{
     margin-top: 10px;
@@ -19,4 +19,22 @@
 
 .parrafor{
     font-size: large;
+}
+
+.presentacion{
+    display: flex;
+    padding: 6rem;
+    background-color: grey;
+}
+
+.presentacion img{
+    width: 700px;
+    height: 700px;
+}
+
+.historia{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    font-weight: bold;
 }
