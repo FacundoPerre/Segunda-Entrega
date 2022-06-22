@@ -10,6 +10,7 @@
 
 .carousel-inner{
     height: 800px;
+    margin-top: 1rem;
 }
 
 
@@ -24,7 +25,7 @@
 .presentacion{
     display: flex;
     padding: 6rem;
-    background-color: grey;
+    background-color: black;
 }
 
 .presentacion img{
@@ -37,4 +38,23 @@
     align-items: center;
     margin-right: 5px;
     font-weight: bold;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: 6s;
+}
+
+.historia p:hover{
+    scale: 2.5px;
+}
+
+.presentacion img:hover{
+    filter: blur(2px);
+}
+
+.fondo{
+    background-color: black;
+}
+
+.d-flex{
+    background-color: gray;
 }
